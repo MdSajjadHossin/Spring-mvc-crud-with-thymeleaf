@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
-	// by using spring data JpaRepository there is no need for making any function
-
     // add method to sort by last Name
     public List<Employee> findAllByOrderByLastNameAsc();
 	
